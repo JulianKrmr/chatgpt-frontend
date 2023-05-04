@@ -1,6 +1,8 @@
 import { useState } from "react";
+import Linkify from "linkify-react";
 
 function App() {
+  const linkifyOptions = {};
   const decoder = new TextDecoder("utf-8");
   const [messages, setMessages] = useState([
     {
@@ -89,7 +91,11 @@ function App() {
                       />
                     </div>
                   </div>
-                  <div className="chat-bubble">{msg.content}</div>
+                  <div className="chat-bubble">
+                    <Linkify as="p" options={linkifyOptions}>
+                      {msg.content}
+                    </Linkify>
+                  </div>
                 </div>
               );
             })}

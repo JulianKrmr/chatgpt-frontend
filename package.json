@@ -7,6 +7,8 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "daisyui": "^2.51.4",
+    "linkify-react": "^4.1.1",
+    "linkifyjs": "^4.1.1",
     "openai": "^3.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
