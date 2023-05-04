@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "gruender";
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

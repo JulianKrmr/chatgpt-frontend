@@ -7,7 +7,8 @@ function App() {
   const decoder = new TextDecoder("utf-8");
   const [messages, setMessages] = useState([
     {
-      content: "Ich bin der Gründer:innen Co-Pilot, wie kann ich Ihnen helfen besser zu gründen?",
+      content:
+        "Ich bin der Gründer:innen Co-Pilot, wie kann ich Ihnen helfen besser zu gründen?",
       role: "assistant",
     },
   ]);
@@ -114,8 +115,9 @@ function App() {
             )}
 
             <input
+              class="font-gruender"
               type="text"
-              placeholder="Stellen sie ihre Frage"
+              placeholder="Stellen Sie Ihre Frage"
               className="input input-bordered flex-grow"
               required
             />
