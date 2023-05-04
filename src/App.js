@@ -3,7 +3,10 @@ import { useState } from "react";
 function App() {
   const decoder = new TextDecoder("utf-8");
   const [messages, setMessages] = useState([
-    { content: "Hey I am Chatbot!", role: "assistant" },
+    {
+      content: "Ich bin der Gründer Copilot und helfe Ihnen besser zu gründen!",
+      role: "assistant",
+    },
   ]);
   const [isTyping, setIsTyping] = useState(false);
 
@@ -105,7 +108,7 @@ function App() {
 
             <input
               type="text"
-              placeholder="Type a question for ChatGPT, ask anything!"
+              placeholder="Stellen sie ihre Frage"
               className="input input-bordered flex-grow"
               required
             />
