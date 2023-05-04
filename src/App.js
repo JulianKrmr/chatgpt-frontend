@@ -7,7 +7,7 @@ function App() {
   const decoder = new TextDecoder("utf-8");
   const [messages, setMessages] = useState([
     {
-      content: "Ich bin der Gründer Copilot und helfe Ihnen besser zu gründen!",
+      content: "Ich bin der Gründer:innen Co-Pilot, wie kann ich Ihnen helfen besser zu gründen?",
       role: "assistant",
     },
   ]);
