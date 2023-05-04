@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { useState } from "react";
 import Linkify from "linkify-react";
 
@@ -85,8 +86,8 @@ function App() {
                       <img
                         src={
                           msg.role === "assistant"
-                            ? "/images/gptFemale.jpg"
-                            : "/images/anakin.webp"
+                            ? "/images/gruenderbot.png"
+                            : "/images/fuergruender.png"
                         }
                       />
                     </div>
