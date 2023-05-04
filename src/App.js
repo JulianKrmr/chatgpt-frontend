@@ -86,7 +86,7 @@ function App() {
                       <img
                         src={
                           msg.role === "assistant"
-                            ? "/images/gruenderbot.png"
+                            ? "/images/gruenderheld.png"
                             : "/images/fuergruender.png"
                         }
                       />
