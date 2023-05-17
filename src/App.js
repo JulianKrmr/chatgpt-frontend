@@ -59,10 +59,11 @@ function App() {
 
     let requestBody = {};
     if (promptExtension === null || promptExtension === "") {
-      requestBody = { query: newMessage.content };
+      requestBody = { query: newMessage.content, history: messages.slice(-6) };
     } else {
       requestBody = {
         query: newMessage.content,
+        history: messages.slice(-6),
         promptExtension: promptExtension,
       };
     }
