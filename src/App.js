@@ -58,13 +58,22 @@ function App() {
     const promptExtension = sessionStorage.getItem("customPrompt");
 
     let requestBody = {};
+    let withad = false;
+    if (messages.length > 4) {
+      withad = true;
+    }
     if (promptExtension === null || promptExtension === "") {
-      requestBody = { query: newMessage.content, history: messages.slice(-6) };
+      requestBody = {
+        query: newMessage.content,
+        history: messages.slice(-6),
+        withAd: withad,
+      };
     } else {
       requestBody = {
         query: newMessage.content,
         history: messages.slice(-6),
         promptExtension: promptExtension,
+        withAd: withad,
       };
     }
 
